@@ -1,7 +1,7 @@
 gnuplot-colorbrewer
 ===================
 
-An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrewer2.org/) in the handy command-line plotting program (gnuplot)[http://www.gnuplot.info/].
+An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrewer2.org/) in the handy command-line plotting program [gnuplot](http://www.gnuplot.info/).
 
 Right now this just includes the qualitative color schemes that I use most often: Set1, Paired, and Dark2. Qualitative color schemes are good for comparing data sets without emphasizing any inherent ordering: bar charts of categorical data, plots of data points and fits to the data, etc.
 
