@@ -4,7 +4,7 @@
 # author: Anna Schneider
 
 # set up plot
-set output 'qualitative_colors.eps'
+set output 'qualitative_colored_lines.eps'
 set terminal postscript color solid enhanced lw 5 "Helvetica"
 set xrange [0:pi]
 
