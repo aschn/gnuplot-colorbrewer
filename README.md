@@ -7,7 +7,7 @@ An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrew
 Qualitative Color Schemes
 -------------------------
 
-Qualitative color schemes are good for comparing data sets without emphasizing any inherent ordering: bar charts of categorical data, plots of data points and fits to the data, etc. These color schemes are in the <code>qualitative</code> directory. Right now this just includes the qualitative color schemes that I use most often (Set1, Paired, and Dark2). Sample code is available for producing line plots (with <code>plot</code>) and images (with <code>splot</code>).
+Qualitative color schemes are good for comparing data sets without emphasizing any inherent ordering: bar charts of categorical data, plots of data points and fits to the data, etc. These color schemes are in the <code>qualitative</code> directory. Right now this just includes the qualitative color schemes that I use most often (Set1, Paired, and Dark2). Sample code is available for producing line plots (with <code>plot</code>) and images (with <code>splot</code>), although the latter is unlikely to be useful for qualitative color schemes.
 
 Sequential Color Schemes
 -------------------------
