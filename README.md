@@ -17,12 +17,14 @@ Sequential color schemes are good for comparing data sets with an inherent order
 Usage
 -----
 
-Let's use the color scheme 'Set1' as an example. Before calling <code>plot</code> in your gnuplot script or interactive session, include this line:
+To use any color scheme, just load it before calling <code>plot</code> in your gnuplot script or interactive session. For example:
 
       load 'path/to/qualitative/set1.plt'
 
-Then to use color number <code>i</code>, add the property <code>ls i</code> to your <code>plot</code> call.
+When plotting lines or points, add the property <code>linestyle i</code> (aka <code>ls i</code>) to your <code>plot</code> call to use color number <code>i</code>. Each color scheme provides 8 discrete colors. All properties besides color (line type, point style, etc.) will match the defaults for the first 8 line types; if you want to modify other properties, simply copy the contents of the color scheme plt file into your plotting script and modify each line style there.
 
-Full example code and output is available in each directory. For example, to produce the output at <code>qualitative/qualitative_colored_lines.eps</code>, run the command
+When plotting using a continuous color palette, simply use your usual <code>splot</code> call.
+
+Full example code and output is available in each directory for both line and palette modes. For example, to produce the output at <code>qualitative/qualitative_colored_lines.eps</code>, run the command
 
      gnuplot path/to/qualitative/qualitative_colored_lines.plt

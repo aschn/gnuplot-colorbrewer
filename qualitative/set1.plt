@@ -4,6 +4,7 @@
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 
+# line styles
 set style line 1 lc rgb '#E41A1C' # red
 set style line 2 lc rgb '#377EB8' # blue
 set style line 3 lc rgb '#4DAF4A' # green
@@ -12,4 +13,13 @@ set style line 5 lc rgb '#FF7F00' # orange
 set style line 6 lc rgb '#FFFF33' # yellow
 set style line 7 lc rgb '#A65628' # brown
 set style line 8 lc rgb '#F781BF' # pink
-set style line 9 lc rgb '#999999' # gray
+
+# palette
+set palette defined ( 0 '#E41A1C',\
+    	    	      1 '#377EB8',\
+		      2 '#4DAF4A',\
+		      3 '#984EA3',\
+		      4 '#FF7F00',\
+		      5 '#FFFF33',\
+		      6 '#A65628',\
+		      7 '#F781BF' )

@@ -1,5 +1,5 @@
 # example code for gnuplot-colorbrewer
-# for use with sequential data
+# for use with sequential data in plot mode
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 
@@ -11,7 +11,7 @@ set xrange [0:pi]
 # set up function to plot
 f(x,i) = cos(x - 1.0 + i/10.0)
 
-# plot with Greyes
+# plot with Greys
 set title 'Greys'
 load 'greys.plt'
 plot f(x,1) ls 1 title 'line 1',\

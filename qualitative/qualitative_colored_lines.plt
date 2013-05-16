@@ -1,5 +1,5 @@
 # example code for gnuplot-colorbrewer
-# for use with qualitative/categorical data
+# for use with qualitative/categorical data in plot mode
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 
@@ -21,8 +21,7 @@ f(x,4) ls 4 title 'line 4',\
 f(x,5) ls 5 title 'line 5',\
 f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
-f(x,8) ls 8 title 'line 8',\
-f(x,9) ls 9 title 'line 9'
+f(x,8) ls 8 title 'line 8'
 
 # plot with Paired
 set title 'Paired'
@@ -34,9 +33,7 @@ f(x,4) ls 4 title 'line 4',\
 f(x,5) ls 5 title 'line 5',\
 f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
-f(x,8) ls 8 title 'line 8',\
-f(x,9) ls 9 title 'line 9',\
-f(x,10) ls 10 title 'line 10'
+f(x,8) ls 8 title 'line 8'
 
 # plot with Dark2
 set title 'Dark2'
