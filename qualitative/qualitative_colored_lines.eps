@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
 %%Title: qualitative_colored_lines.eps
 %%Creator: gnuplot 4.2 patchlevel 4 
-%%CreationDate: Fri May 10 11:43:28 2013
+%%CreationDate: Thu May 16 01:07:05 2013
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 554 770
 %%Orientation: Landscape
@@ -50,7 +50,7 @@ SDict begin [
   /Author (anna)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Fri May 10 11:43:28 2013)
+  /CreationDate (Thu May 16 01:07:05 2013)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -487,10 +487,25 @@ gsave % colour palette begin
 /SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
   XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
   if} ifelse} ifelse} ifelse} def
-/InterpolatedColor false def
-/cF7 {sqrt} bind def	% sqrt(x)
-/cF5 {dup dup mul mul} bind def	% x^3
-/cF15 {360 mul sin} bind def	% sin(360x)
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.8941 .2157 .302 .5961 1 1 .651 .9686 ] def
+/GreenA [.102 .4941 .6863 .3059 .498 1 .3373 .5059 ] def
+/BlueA [.1098 .7216 .2902 .6392 0 .2 .1569 .749 ] def
 /pm3dround {maxcolors 0 gt {dup 1 ge
 	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
 /pm3dGamma 1.0 1.5 div def
@@ -1575,115 +1590,6 @@ LT7
 63 -17 V
 64 -15 V
 stroke
-LT8
-0.60 0.60 0.60 C LTb
-6395 3367 M
-[ [(Helvetica) 140.0 0.0 true true 0 (line 9)]
-] -46.7 MRshow
-LT8
-0.60 0.60 0.60 C 6479 3367 M
-399 0 V
-742 4609 M
-64 6 V
-63 4 V
-64 1 V
-64 -1 V
-63 -3 V
-64 -5 V
-64 -7 V
-63 -10 V
-64 -11 V
-64 -14 V
-63 -16 V
-64 -18 V
-64 -20 V
-63 -22 V
-64 -25 V
-64 -26 V
-64 -28 V
-63 -30 V
-64 -33 V
-64 -34 V
-63 -36 V
-64 -38 V
-64 -39 V
-63 -42 V
-64 -43 V
-64 -45 V
-63 -46 V
-64 -48 V
-64 -50 V
-63 -51 V
-64 -53 V
-64 -54 V
-63 -55 V
-64 -56 V
-64 -58 V
-63 -59 V
-64 -60 V
-64 -61 V
-63 -62 V
-64 -63 V
-64 -64 V
-63 -64 V
-64 -66 V
-64 -66 V
-63 -66 V
-64 -67 V
-64 -68 V
-63 -68 V
-64 -68 V
-64 -69 V
-64 -68 V
-63 -69 V
-64 -69 V
-64 -69 V
-63 -69 V
-64 -68 V
-64 -69 V
-63 -68 V
-64 -67 V
-64 -67 V
-63 -67 V
-64 -66 V
-64 -66 V
-63 -65 V
-64 -64 V
-64 -63 V
-63 -62 V
-64 -62 V
-64 -60 V
-63 -59 V
-64 -58 V
-64 -57 V
-63 -56 V
-64 -54 V
-64 -53 V
-63 -52 V
-64 -50 V
-64 -48 V
-63 -47 V
-64 -46 V
-64 -43 V
-63 -42 V
-64 -40 V
-64 -39 V
-64 -36 V
-63 -35 V
-64 -33 V
-64 -31 V
-63 -29 V
-64 -27 V
-64 -25 V
-63 -22 V
-64 -21 V
-64 -19 V
-63 -16 V
-64 -15 V
-64 -12 V
-63 -10 V
-64 -8 V
-stroke
 LTb
 742 4620 N
 742 280 L
@@ -1735,10 +1641,25 @@ gsave % colour palette begin
 /SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
   XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
   if} ifelse} ifelse} ifelse} def
-/InterpolatedColor false def
-/cF7 {sqrt} bind def	% sqrt(x)
-/cF5 {dup dup mul mul} bind def	% x^3
-/cF15 {360 mul sin} bind def	% sin(360x)
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.651 .1216 .698 .2 .9843 .8902 .9922 1 ] def
+/GreenA [.8078 .4706 .8745 .6275 .6039 .102 .749 .498 ] def
+/BlueA [.8902 .7059 .5412 .1725 .6 .1098 .4353 0 ] def
 /pm3dround {maxcolors 0 gt {dup 1 ge
 	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
 /pm3dGamma 1.0 1.5 div def
@@ -1766,13 +1687,43 @@ stroke
 ] -46.7 MRshow
 1.000 UL
 LTb
-742 1365 M
+742 714 M
 63 0 V
 6241 0 R
 -63 0 V
 stroke
-658 1365 M
-[ [(Helvetica) 140.0 0.0 true true 0 (-0.5)]
+658 714 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.8)]
+] -46.7 MRshow
+1.000 UL
+LTb
+742 1148 M
+63 0 V
+6241 0 R
+-63 0 V
+stroke
+658 1148 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.6)]
+] -46.7 MRshow
+1.000 UL
+LTb
+742 1582 M
+63 0 V
+6241 0 R
+-63 0 V
+stroke
+658 1582 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.4)]
+] -46.7 MRshow
+1.000 UL
+LTb
+742 2016 M
+63 0 V
+6241 0 R
+-63 0 V
+stroke
+658 2016 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.2)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -1786,13 +1737,43 @@ stroke
 ] -46.7 MRshow
 1.000 UL
 LTb
-742 3535 M
+742 2884 M
 63 0 V
 6241 0 R
 -63 0 V
 stroke
-658 3535 M
-[ [(Helvetica) 140.0 0.0 true true 0 ( 0.5)]
+658 2884 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.2)]
+] -46.7 MRshow
+1.000 UL
+LTb
+742 3318 M
+63 0 V
+6241 0 R
+-63 0 V
+stroke
+658 3318 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.4)]
+] -46.7 MRshow
+1.000 UL
+LTb
+742 3752 M
+63 0 V
+6241 0 R
+-63 0 V
+stroke
+658 3752 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.6)]
+] -46.7 MRshow
+1.000 UL
+LTb
+742 4186 M
+63 0 V
+6241 0 R
+-63 0 V
+stroke
+658 4186 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.8)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -2763,224 +2744,6 @@ LT7
 63 -17 V
 64 -15 V
 stroke
-LT8
-0.79 0.70 0.84 C LTb
-6395 3367 M
-[ [(Helvetica) 140.0 0.0 true true 0 (line 9)]
-] -46.7 MRshow
-LT8
-0.79 0.70 0.84 C 6479 3367 M
-399 0 V
-742 4609 M
-64 6 V
-63 4 V
-64 1 V
-64 -1 V
-63 -3 V
-64 -5 V
-64 -7 V
-63 -10 V
-64 -11 V
-64 -14 V
-63 -16 V
-64 -18 V
-64 -20 V
-63 -22 V
-64 -25 V
-64 -26 V
-64 -28 V
-63 -30 V
-64 -33 V
-64 -34 V
-63 -36 V
-64 -38 V
-64 -39 V
-63 -42 V
-64 -43 V
-64 -45 V
-63 -46 V
-64 -48 V
-64 -50 V
-63 -51 V
-64 -53 V
-64 -54 V
-63 -55 V
-64 -56 V
-64 -58 V
-63 -59 V
-64 -60 V
-64 -61 V
-63 -62 V
-64 -63 V
-64 -64 V
-63 -64 V
-64 -66 V
-64 -66 V
-63 -66 V
-64 -67 V
-64 -68 V
-63 -68 V
-64 -68 V
-64 -69 V
-64 -68 V
-63 -69 V
-64 -69 V
-64 -69 V
-63 -69 V
-64 -68 V
-64 -69 V
-63 -68 V
-64 -67 V
-64 -67 V
-63 -67 V
-64 -66 V
-64 -66 V
-63 -65 V
-64 -64 V
-64 -63 V
-63 -62 V
-64 -62 V
-64 -60 V
-63 -59 V
-64 -58 V
-64 -57 V
-63 -56 V
-64 -54 V
-64 -53 V
-63 -52 V
-64 -50 V
-64 -48 V
-63 -47 V
-64 -46 V
-64 -43 V
-63 -42 V
-64 -40 V
-64 -39 V
-64 -36 V
-63 -35 V
-64 -33 V
-64 -31 V
-63 -29 V
-64 -27 V
-64 -25 V
-63 -22 V
-64 -21 V
-64 -19 V
-63 -16 V
-64 -15 V
-64 -12 V
-63 -10 V
-64 -8 V
-stroke
-LT0
-0.42 0.24 0.60 C LTb
-6395 3227 M
-[ [(Helvetica) 140.0 0.0 true true 0 (line 10)]
-] -46.7 MRshow
-LT0
-0.42 0.24 0.60 C 6479 3227 M
-399 0 V
-742 4620 M
-64 -1 V
-63 -3 V
-64 -6 V
-64 -7 V
-63 -10 V
-64 -12 V
-64 -14 V
-63 -17 V
-64 -18 V
-64 -20 V
-63 -23 V
-64 -24 V
-64 -27 V
-63 -29 V
-64 -30 V
-64 -33 V
-64 -34 V
-63 -36 V
-64 -39 V
-64 -40 V
-63 -41 V
-64 -44 V
-64 -45 V
-63 -46 V
-64 -49 V
-64 -50 V
-63 -51 V
-64 -53 V
-64 -54 V
-63 -55 V
-64 -57 V
-64 -58 V
-63 -59 V
-64 -60 V
-64 -61 V
-63 -63 V
-64 -63 V
-64 -64 V
-63 -64 V
-64 -66 V
-64 -66 V
-63 -66 V
-64 -68 V
-64 -67 V
-63 -68 V
-64 -68 V
-64 -69 V
-63 -69 V
-64 -69 V
-64 -68 V
-64 -69 V
-63 -69 V
-64 -69 V
-64 -68 V
-63 -68 V
-64 -67 V
-64 -68 V
-63 -66 V
-64 -66 V
-64 -66 V
-63 -64 V
-64 -64 V
-64 -63 V
-63 -63 V
-64 -61 V
-64 -60 V
-63 -59 V
-64 -58 V
-64 -57 V
-63 -55 V
-64 -54 V
-64 -53 V
-63 -51 V
-64 -50 V
-64 -49 V
-63 -46 V
-64 -45 V
-64 -44 V
-63 -41 V
-64 -40 V
-64 -39 V
-63 -36 V
-64 -34 V
-64 -33 V
-64 -30 V
-63 -29 V
-64 -27 V
-64 -24 V
-63 -23 V
-64 -20 V
-64 -18 V
-63 -17 V
-64 -14 V
-64 -12 V
-63 -10 V
-64 -7 V
-64 -6 V
-63 -3 V
-64 -1 V
-stroke
 LTb
 742 4620 N
 742 280 L
@@ -3032,10 +2795,25 @@ gsave % colour palette begin
 /SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
   XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
   if} ifelse} ifelse} ifelse} def
-/InterpolatedColor false def
-/cF7 {sqrt} bind def	% sqrt(x)
-/cF5 {dup dup mul mul} bind def	% x^3
-/cF15 {360 mul sin} bind def	% sin(360x)
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.1059 .851 .4588 .9059 .4 .902 .651 .4 ] def
+/GreenA [.6196 .3725 .4392 .1608 .651 .6706 .4627 .4 ] def
+/BlueA [.4667 .0078 .702 .5412 .1176 .0078 .1137 .4 ] def
 /pm3dround {maxcolors 0 gt {dup 1 ge
 	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
 /pm3dGamma 1.0 1.5 div def
