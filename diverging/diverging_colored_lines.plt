@@ -1,19 +1,19 @@
 # example code for gnuplot-colorbrewer
-# for use with sequential data in plot mode
+# for use with diverging data in plot mode
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 
 # set up plot
-set output 'sequential_colored_lines.eps'
+set output 'diverging_colored_lines.eps'
 set terminal postscript color solid enhanced lw 5 "Helvetica"
 set xrange [0:pi]
 
 # set up function to plot
 f(x,i) = cos(x - 1.0 + i/10.0)
 
-# plot with Greys
-set title 'Greys'
-load 'Greys.plt'
+# plot with BrBG
+set title 'BrBG'
+load 'BrBG.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -23,9 +23,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with Purples
-set title 'Purples'
-load 'Purples.plt'
+# plot with PiYG
+set title 'PiYG'
+load 'PiYG.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -35,9 +35,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with Blues
-set title 'Blues'
-load 'Blues.plt'
+# plot with PuGn
+set title 'PuGn'
+load 'PuGn.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -47,9 +47,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with Greens
-set title 'Greens'
-load 'Greens.plt'
+# plot with PuOr
+set title 'PuOr'
+load 'PuOr.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -59,9 +59,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with Oranges
-set title 'Oranges'
-load 'Oranges.plt'
+# plot with RdBu
+set title 'RdBu'
+load 'RdBu.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -71,9 +71,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with Reds
-set title 'Reds'
-load 'reds.plt'
+# plot with RdGy
+set title 'RdGy'
+load 'RdGy.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -83,9 +83,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with BuGn
-set title 'BuGn'
-load 'BuGn.plt'
+# plot with RdYlBu
+set title 'RdYlBu'
+load 'RdYlBu.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -95,9 +95,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with YlGn
-set title 'YlGn'
-load 'YlGn.plt'
+# plot with RdYlGn
+set title 'RdYlGn'
+load 'RdYlGn.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -107,9 +107,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with YlOrRd
-set title 'YlOrRd'
-load 'YlOrRd.plt'
+# plot with Spectral
+set title 'Spectral'
+load 'Spectral.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\

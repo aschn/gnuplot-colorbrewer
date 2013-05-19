@@ -1,10 +1,10 @@
 # example code for gnuplot-colorbrewer
-# for use with qualitative/categorical data in splot mode
+# for use with diverging data in splot mode
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 
 # set up output
-set output 'qualitative_colored_palettes.eps'
+set output 'diverging_colored_palettes.eps'
 set terminal postscript color solid enhanced lw 5 "Helvetica"
 
 # set up view, following http://gnuplot.sourceforge.net/demo/pm3dcolors.4.gnu
@@ -24,37 +24,47 @@ set pm3d explicit at b
 f(x)=(x+10)/20
 GPFUN_f = "f(x)=(x+10)/20"
 
-# plot with Set1
-set title 'Set1'
-load 'Set1.plt'
+# plot with BrBG
+set title 'BrBG'
+load 'BrBG.plt'
 splot f(x)
 
-# plot with Paired
-set title 'Paired'
-load 'Paired.plt'
+# plot with PiYG
+set title 'PiYG'
+load 'PiYG.plt'
 splot f(x)
 
-# plot with Accent
-set title 'Accent'
-load 'Accent.plt'
+# plot with PuGn
+set title 'PuGn'
+load 'PuGn.plt'
 splot f(x)
 
-# plot with Pastel1
-set title 'Pastel1'
-load 'Pastel1.plt'
+# plot with PuOr
+set title 'PuOr'
+load 'PuOr.plt'
 splot f(x)
 
-# plot with Set2
-set title 'Set2'
-load 'Set2.plt'
+# plot with RdBu
+set title 'RdBu'
+load 'RdBu.plt'
 splot f(x)
 
-# plot with Dark2
-set title 'Dark2'
-load 'Dark2.plt'
+# plot with RdGy
+set title 'RdGy'
+load 'RdGy.plt'
 splot f(x)
 
-# plot with Set3
-set title 'Set3'
-load 'Set3.plt'
+# plot with RdYlBu
+set title 'RdYlBu'
+load 'RdYlBu.plt'
+splot f(x)
+
+# plot with RdYlGn
+set title 'RdYlGn'
+load 'RdYlGn.plt'
+splot f(x)
+
+# plot with Spectral
+set title 'Spectral'
+load 'Spectral.plt'
 splot f(x)

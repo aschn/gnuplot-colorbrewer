@@ -1,6 +1,6 @@
 # line styles for ColorBrewer Set1
 # for use with qualitative/categorical data
-# provides 9 easy-to-name colors
+# provides 8 easy-to-name colors
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 

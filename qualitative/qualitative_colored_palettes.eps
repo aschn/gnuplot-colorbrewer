@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
 %%Title: qualitative_colored_palettes.eps
 %%Creator: gnuplot 4.2 patchlevel 4 
-%%CreationDate: Thu May 16 00:57:48 2013
+%%CreationDate: Sun May 19 16:24:47 2013
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 554 770
 %%Orientation: Landscape
@@ -50,7 +50,7 @@ SDict begin [
   /Author (anna)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Thu May 16 00:57:48 2013)
+  /CreationDate (Sun May 19 16:24:47 2013)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -1069,6 +1069,855 @@ gsave % colour palette begin
     {RedA gidx get GreenA gidx get BlueA gidx get}
     {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
 /GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.498 .7451 .9922 1 .2196 .9412 .749 .4 ] def
+/GreenA [.7882 .6824 .7529 1 .4235 .0078 .3569 .4 ] def
+/BlueA [.498 .8314 .5255 .6 .6902 .498 .0902 .4 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 div def
+/ColorSpace (RGB) def
+Color true and { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+3599 4340 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Accent)]
+] -46.7 MCshow
+1.000 UP
+1.000 UL
+LT0
+%pm3d_map_begin
+.005 g 1097 909 N 0 -3221 50 0 0 3221 h
+.015 g 1147 909 N 0 -3221 50 0 0 3221 h
+.025 g 1197 909 N 0 -3221 50 0 0 3221 h
+.035 g 1247 909 N 0 -3221 50 0 0 3221 h
+.045 g 1297 909 N 0 -3221 50 0 0 3221 h
+.055 g 1347 909 N 0 -3221 50 0 0 3221 h
+.065 g 1397 909 N 0 -3221 50 0 0 3221 h
+.075 g 1447 909 N 0 -3221 50 0 0 3221 h
+.085 g 1497 909 N 0 -3221 50 0 0 3221 h
+.095 g 1547 909 N 0 -3221 51 0 0 3221 h
+.105 g 1598 909 N 0 -3221 50 0 0 3221 h
+.115 g 1648 909 N 0 -3221 50 0 0 3221 h
+.125 g 1698 909 N 0 -3221 50 0 0 3221 h
+.135 g 1748 909 N 0 -3221 50 0 0 3221 h
+.145 g 1798 909 N 0 -3221 50 0 0 3221 h
+.155 g 1848 909 N 0 -3221 50 0 0 3221 h
+.165 g 1898 909 N 0 -3221 50 0 0 3221 h
+.175 g 1948 909 N 0 -3221 50 0 0 3221 h
+.185 g 1998 909 N 0 -3221 50 0 0 3221 h
+.195 g 2048 909 N 0 -3221 50 0 0 3221 h
+.205 g 2098 909 N 0 -3221 50 0 0 3221 h
+.215 g 2148 909 N 0 -3221 50 0 0 3221 h
+.225 g 2198 909 N 0 -3221 50 0 0 3221 h
+.235 g 2248 909 N 0 -3221 50 0 0 3221 h
+.245 g 2298 909 N 0 -3221 50 0 0 3221 h
+.255 g 2348 909 N 0 -3221 50 0 0 3221 h
+.265 g 2398 909 N 0 -3221 50 0 0 3221 h
+.275 g 2448 909 N 0 -3221 50 0 0 3221 h
+.285 g 2498 909 N 0 -3221 50 0 0 3221 h
+.295 g 2548 909 N 0 -3221 51 0 0 3221 h
+.305 g 2599 909 N 0 -3221 50 0 0 3221 h
+.315 g 2649 909 N 0 -3221 50 0 0 3221 h
+.325 g 2699 909 N 0 -3221 50 0 0 3221 h
+.335 g 2749 909 N 0 -3221 50 0 0 3221 h
+.345 g 2799 909 N 0 -3221 50 0 0 3221 h
+.355 g 2849 909 N 0 -3221 50 0 0 3221 h
+.365 g 2899 909 N 0 -3221 50 0 0 3221 h
+.375 g 2949 909 N 0 -3221 50 0 0 3221 h
+.385 g 2999 909 N 0 -3221 50 0 0 3221 h
+.395 g 3049 909 N 0 -3221 50 0 0 3221 h
+.405 g 3099 909 N 0 -3221 50 0 0 3221 h
+.415 g 3149 909 N 0 -3221 50 0 0 3221 h
+.425 g 3199 909 N 0 -3221 50 0 0 3221 h
+.435 g 3249 909 N 0 -3221 50 0 0 3221 h
+.445 g 3299 909 N 0 -3221 50 0 0 3221 h
+.455 g 3349 909 N 0 -3221 50 0 0 3221 h
+.465 g 3399 909 N 0 -3221 50 0 0 3221 h
+.475 g 3449 909 N 0 -3221 50 0 0 3221 h
+.485 g 3499 909 N 0 -3221 50 0 0 3221 h
+.495 g 3549 909 N 0 -3221 51 0 0 3221 h
+.505 g 3600 909 N 0 -3221 50 0 0 3221 h
+.515 g 3650 909 N 0 -3221 50 0 0 3221 h
+.525 g 3700 909 N 0 -3221 50 0 0 3221 h
+.535 g 3750 909 N 0 -3221 50 0 0 3221 h
+.545 g 3800 909 N 0 -3221 50 0 0 3221 h
+.555 g 3850 909 N 0 -3221 50 0 0 3221 h
+.565 g 3900 909 N 0 -3221 50 0 0 3221 h
+.575 g 3950 909 N 0 -3221 50 0 0 3221 h
+.585 g 4000 909 N 0 -3221 50 0 0 3221 h
+.595 g 4050 909 N 0 -3221 50 0 0 3221 h
+.605 g 4100 909 N 0 -3221 50 0 0 3221 h
+.615 g 4150 909 N 0 -3221 50 0 0 3221 h
+.625 g 4200 909 N 0 -3221 50 0 0 3221 h
+.635 g 4250 909 N 0 -3221 50 0 0 3221 h
+.645 g 4300 909 N 0 -3221 50 0 0 3221 h
+.655 g 4350 909 N 0 -3221 50 0 0 3221 h
+.665 g 4400 909 N 0 -3221 50 0 0 3221 h
+.675 g 4450 909 N 0 -3221 50 0 0 3221 h
+.685 g 4500 909 N 0 -3221 50 0 0 3221 h
+.695 g 4550 909 N 0 -3221 50 0 0 3221 h
+.705 g 4600 909 N 0 -3221 51 0 0 3221 h
+.715 g 4651 909 N 0 -3221 50 0 0 3221 h
+.725 g 4701 909 N 0 -3221 50 0 0 3221 h
+.735 g 4751 909 N 0 -3221 50 0 0 3221 h
+.745 g 4801 909 N 0 -3221 50 0 0 3221 h
+.755 g 4851 909 N 0 -3221 50 0 0 3221 h
+.765 g 4901 909 N 0 -3221 50 0 0 3221 h
+.775 g 4951 909 N 0 -3221 50 0 0 3221 h
+.785 g 5001 909 N 0 -3221 50 0 0 3221 h
+.795 g 5051 909 N 0 -3221 50 0 0 3221 h
+.805 g 5101 909 N 0 -3221 50 0 0 3221 h
+.815 g 5151 909 N 0 -3221 50 0 0 3221 h
+.825 g 5201 909 N 0 -3221 50 0 0 3221 h
+.835 g 5251 909 N 0 -3221 50 0 0 3221 h
+.845 g 5301 909 N 0 -3221 50 0 0 3221 h
+.855 g 5351 909 N 0 -3221 50 0 0 3221 h
+.865 g 5401 909 N 0 -3221 50 0 0 3221 h
+.875 g 5451 909 N 0 -3221 50 0 0 3221 h
+.885 g 5501 909 N 0 -3221 50 0 0 3221 h
+.895 g 5551 909 N 0 -3221 50 0 0 3221 h
+.905 g 5601 909 N 0 -3221 51 0 0 3221 h
+.915 g 5652 909 N 0 -3221 50 0 0 3221 h
+.925 g 5702 909 N 0 -3221 50 0 0 3221 h
+.935 g 5752 909 N 0 -3221 50 0 0 3221 h
+.945 g 5802 909 N 0 -3221 50 0 0 3221 h
+.955 g 5852 909 N 0 -3221 50 0 0 3221 h
+.965 g 5902 909 N 0 -3221 50 0 0 3221 h
+.975 g 5952 909 N 0 -3221 50 0 0 3221 h
+.985 g 6002 909 N 0 -3221 50 0 0 3221 h
+.995 g 6052 909 N 0 -3221 50 0 0 3221 h
+%pm3d_map_end
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+stroke gsave	%% draw gray scale smooth box
+maxcolors 0 gt {/imax maxcolors def} {/imax 1024 def} ifelse
+6227 909 translate 250 3221 scale 0 setlinewidth
+/ystep 1 imax div def /y0 0 def /ii 0 def
+{ y0 g 0 y0 N 1 0 V 0 ystep V -1 0 f
+/y0 y0 ystep add def /ii ii 1 add def
+ii imax ge {exit} if } loop
+grestore 0 setgray
+1.000 UL
+LTb
+6227 909 N
+250 0 V
+0 3221 V
+-250 0 V
+0 -3221 V
+Z stroke
+1.000 UL
+LTb
+1.000 UL
+LTb
+6477 909 M
+-63 0 V
+stroke
+6561 909 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 909 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 1553 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.2)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 1553 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2197 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.4)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2197 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2841 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.6)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2841 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 3485 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.8)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 3485 M
+63 0 V
+187 645 R
+-63 0 V
+stroke
+6561 4130 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 4130 M
+63 0 V
+1.000 UP
+stroke
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Page: 4 4
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.9843 .702 .8 .8706 .9961 1 .898 .9922 ] def
+/GreenA [.7059 .8039 .9216 .7961 .851 1 .8471 .8549 ] def
+/BlueA [.6824 .8902 .7725 .8941 .651 .8 .7412 .9255 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 div def
+/ColorSpace (RGB) def
+Color true and { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+3599 4340 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Pastel1)]
+] -46.7 MCshow
+1.000 UP
+1.000 UL
+LT0
+%pm3d_map_begin
+.005 g 1097 909 N 0 -3221 50 0 0 3221 h
+.015 g 1147 909 N 0 -3221 50 0 0 3221 h
+.025 g 1197 909 N 0 -3221 50 0 0 3221 h
+.035 g 1247 909 N 0 -3221 50 0 0 3221 h
+.045 g 1297 909 N 0 -3221 50 0 0 3221 h
+.055 g 1347 909 N 0 -3221 50 0 0 3221 h
+.065 g 1397 909 N 0 -3221 50 0 0 3221 h
+.075 g 1447 909 N 0 -3221 50 0 0 3221 h
+.085 g 1497 909 N 0 -3221 50 0 0 3221 h
+.095 g 1547 909 N 0 -3221 51 0 0 3221 h
+.105 g 1598 909 N 0 -3221 50 0 0 3221 h
+.115 g 1648 909 N 0 -3221 50 0 0 3221 h
+.125 g 1698 909 N 0 -3221 50 0 0 3221 h
+.135 g 1748 909 N 0 -3221 50 0 0 3221 h
+.145 g 1798 909 N 0 -3221 50 0 0 3221 h
+.155 g 1848 909 N 0 -3221 50 0 0 3221 h
+.165 g 1898 909 N 0 -3221 50 0 0 3221 h
+.175 g 1948 909 N 0 -3221 50 0 0 3221 h
+.185 g 1998 909 N 0 -3221 50 0 0 3221 h
+.195 g 2048 909 N 0 -3221 50 0 0 3221 h
+.205 g 2098 909 N 0 -3221 50 0 0 3221 h
+.215 g 2148 909 N 0 -3221 50 0 0 3221 h
+.225 g 2198 909 N 0 -3221 50 0 0 3221 h
+.235 g 2248 909 N 0 -3221 50 0 0 3221 h
+.245 g 2298 909 N 0 -3221 50 0 0 3221 h
+.255 g 2348 909 N 0 -3221 50 0 0 3221 h
+.265 g 2398 909 N 0 -3221 50 0 0 3221 h
+.275 g 2448 909 N 0 -3221 50 0 0 3221 h
+.285 g 2498 909 N 0 -3221 50 0 0 3221 h
+.295 g 2548 909 N 0 -3221 51 0 0 3221 h
+.305 g 2599 909 N 0 -3221 50 0 0 3221 h
+.315 g 2649 909 N 0 -3221 50 0 0 3221 h
+.325 g 2699 909 N 0 -3221 50 0 0 3221 h
+.335 g 2749 909 N 0 -3221 50 0 0 3221 h
+.345 g 2799 909 N 0 -3221 50 0 0 3221 h
+.355 g 2849 909 N 0 -3221 50 0 0 3221 h
+.365 g 2899 909 N 0 -3221 50 0 0 3221 h
+.375 g 2949 909 N 0 -3221 50 0 0 3221 h
+.385 g 2999 909 N 0 -3221 50 0 0 3221 h
+.395 g 3049 909 N 0 -3221 50 0 0 3221 h
+.405 g 3099 909 N 0 -3221 50 0 0 3221 h
+.415 g 3149 909 N 0 -3221 50 0 0 3221 h
+.425 g 3199 909 N 0 -3221 50 0 0 3221 h
+.435 g 3249 909 N 0 -3221 50 0 0 3221 h
+.445 g 3299 909 N 0 -3221 50 0 0 3221 h
+.455 g 3349 909 N 0 -3221 50 0 0 3221 h
+.465 g 3399 909 N 0 -3221 50 0 0 3221 h
+.475 g 3449 909 N 0 -3221 50 0 0 3221 h
+.485 g 3499 909 N 0 -3221 50 0 0 3221 h
+.495 g 3549 909 N 0 -3221 51 0 0 3221 h
+.505 g 3600 909 N 0 -3221 50 0 0 3221 h
+.515 g 3650 909 N 0 -3221 50 0 0 3221 h
+.525 g 3700 909 N 0 -3221 50 0 0 3221 h
+.535 g 3750 909 N 0 -3221 50 0 0 3221 h
+.545 g 3800 909 N 0 -3221 50 0 0 3221 h
+.555 g 3850 909 N 0 -3221 50 0 0 3221 h
+.565 g 3900 909 N 0 -3221 50 0 0 3221 h
+.575 g 3950 909 N 0 -3221 50 0 0 3221 h
+.585 g 4000 909 N 0 -3221 50 0 0 3221 h
+.595 g 4050 909 N 0 -3221 50 0 0 3221 h
+.605 g 4100 909 N 0 -3221 50 0 0 3221 h
+.615 g 4150 909 N 0 -3221 50 0 0 3221 h
+.625 g 4200 909 N 0 -3221 50 0 0 3221 h
+.635 g 4250 909 N 0 -3221 50 0 0 3221 h
+.645 g 4300 909 N 0 -3221 50 0 0 3221 h
+.655 g 4350 909 N 0 -3221 50 0 0 3221 h
+.665 g 4400 909 N 0 -3221 50 0 0 3221 h
+.675 g 4450 909 N 0 -3221 50 0 0 3221 h
+.685 g 4500 909 N 0 -3221 50 0 0 3221 h
+.695 g 4550 909 N 0 -3221 50 0 0 3221 h
+.705 g 4600 909 N 0 -3221 51 0 0 3221 h
+.715 g 4651 909 N 0 -3221 50 0 0 3221 h
+.725 g 4701 909 N 0 -3221 50 0 0 3221 h
+.735 g 4751 909 N 0 -3221 50 0 0 3221 h
+.745 g 4801 909 N 0 -3221 50 0 0 3221 h
+.755 g 4851 909 N 0 -3221 50 0 0 3221 h
+.765 g 4901 909 N 0 -3221 50 0 0 3221 h
+.775 g 4951 909 N 0 -3221 50 0 0 3221 h
+.785 g 5001 909 N 0 -3221 50 0 0 3221 h
+.795 g 5051 909 N 0 -3221 50 0 0 3221 h
+.805 g 5101 909 N 0 -3221 50 0 0 3221 h
+.815 g 5151 909 N 0 -3221 50 0 0 3221 h
+.825 g 5201 909 N 0 -3221 50 0 0 3221 h
+.835 g 5251 909 N 0 -3221 50 0 0 3221 h
+.845 g 5301 909 N 0 -3221 50 0 0 3221 h
+.855 g 5351 909 N 0 -3221 50 0 0 3221 h
+.865 g 5401 909 N 0 -3221 50 0 0 3221 h
+.875 g 5451 909 N 0 -3221 50 0 0 3221 h
+.885 g 5501 909 N 0 -3221 50 0 0 3221 h
+.895 g 5551 909 N 0 -3221 50 0 0 3221 h
+.905 g 5601 909 N 0 -3221 51 0 0 3221 h
+.915 g 5652 909 N 0 -3221 50 0 0 3221 h
+.925 g 5702 909 N 0 -3221 50 0 0 3221 h
+.935 g 5752 909 N 0 -3221 50 0 0 3221 h
+.945 g 5802 909 N 0 -3221 50 0 0 3221 h
+.955 g 5852 909 N 0 -3221 50 0 0 3221 h
+.965 g 5902 909 N 0 -3221 50 0 0 3221 h
+.975 g 5952 909 N 0 -3221 50 0 0 3221 h
+.985 g 6002 909 N 0 -3221 50 0 0 3221 h
+.995 g 6052 909 N 0 -3221 50 0 0 3221 h
+%pm3d_map_end
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+stroke gsave	%% draw gray scale smooth box
+maxcolors 0 gt {/imax maxcolors def} {/imax 1024 def} ifelse
+6227 909 translate 250 3221 scale 0 setlinewidth
+/ystep 1 imax div def /y0 0 def /ii 0 def
+{ y0 g 0 y0 N 1 0 V 0 ystep V -1 0 f
+/y0 y0 ystep add def /ii ii 1 add def
+ii imax ge {exit} if } loop
+grestore 0 setgray
+1.000 UL
+LTb
+6227 909 N
+250 0 V
+0 3221 V
+-250 0 V
+0 -3221 V
+Z stroke
+1.000 UL
+LTb
+1.000 UL
+LTb
+6477 909 M
+-63 0 V
+stroke
+6561 909 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 909 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 1553 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.2)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 1553 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2197 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.4)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2197 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2841 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.6)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2841 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 3485 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.8)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 3485 M
+63 0 V
+187 645 R
+-63 0 V
+stroke
+6561 4130 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 4130 M
+63 0 V
+1.000 UP
+stroke
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Page: 5 5
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.4 .9882 .5529 .9059 .651 1 .898 .702 ] def
+/GreenA [.7608 .5529 .6275 .5412 .8471 .851 .7686 .702 ] def
+/BlueA [.6471 .3843 .7961 .7647 .3294 .1843 .5804 .702 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 div def
+/ColorSpace (RGB) def
+Color true and { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+3599 4340 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Set2)]
+] -46.7 MCshow
+1.000 UP
+1.000 UL
+LT0
+%pm3d_map_begin
+.005 g 1097 909 N 0 -3221 50 0 0 3221 h
+.015 g 1147 909 N 0 -3221 50 0 0 3221 h
+.025 g 1197 909 N 0 -3221 50 0 0 3221 h
+.035 g 1247 909 N 0 -3221 50 0 0 3221 h
+.045 g 1297 909 N 0 -3221 50 0 0 3221 h
+.055 g 1347 909 N 0 -3221 50 0 0 3221 h
+.065 g 1397 909 N 0 -3221 50 0 0 3221 h
+.075 g 1447 909 N 0 -3221 50 0 0 3221 h
+.085 g 1497 909 N 0 -3221 50 0 0 3221 h
+.095 g 1547 909 N 0 -3221 51 0 0 3221 h
+.105 g 1598 909 N 0 -3221 50 0 0 3221 h
+.115 g 1648 909 N 0 -3221 50 0 0 3221 h
+.125 g 1698 909 N 0 -3221 50 0 0 3221 h
+.135 g 1748 909 N 0 -3221 50 0 0 3221 h
+.145 g 1798 909 N 0 -3221 50 0 0 3221 h
+.155 g 1848 909 N 0 -3221 50 0 0 3221 h
+.165 g 1898 909 N 0 -3221 50 0 0 3221 h
+.175 g 1948 909 N 0 -3221 50 0 0 3221 h
+.185 g 1998 909 N 0 -3221 50 0 0 3221 h
+.195 g 2048 909 N 0 -3221 50 0 0 3221 h
+.205 g 2098 909 N 0 -3221 50 0 0 3221 h
+.215 g 2148 909 N 0 -3221 50 0 0 3221 h
+.225 g 2198 909 N 0 -3221 50 0 0 3221 h
+.235 g 2248 909 N 0 -3221 50 0 0 3221 h
+.245 g 2298 909 N 0 -3221 50 0 0 3221 h
+.255 g 2348 909 N 0 -3221 50 0 0 3221 h
+.265 g 2398 909 N 0 -3221 50 0 0 3221 h
+.275 g 2448 909 N 0 -3221 50 0 0 3221 h
+.285 g 2498 909 N 0 -3221 50 0 0 3221 h
+.295 g 2548 909 N 0 -3221 51 0 0 3221 h
+.305 g 2599 909 N 0 -3221 50 0 0 3221 h
+.315 g 2649 909 N 0 -3221 50 0 0 3221 h
+.325 g 2699 909 N 0 -3221 50 0 0 3221 h
+.335 g 2749 909 N 0 -3221 50 0 0 3221 h
+.345 g 2799 909 N 0 -3221 50 0 0 3221 h
+.355 g 2849 909 N 0 -3221 50 0 0 3221 h
+.365 g 2899 909 N 0 -3221 50 0 0 3221 h
+.375 g 2949 909 N 0 -3221 50 0 0 3221 h
+.385 g 2999 909 N 0 -3221 50 0 0 3221 h
+.395 g 3049 909 N 0 -3221 50 0 0 3221 h
+.405 g 3099 909 N 0 -3221 50 0 0 3221 h
+.415 g 3149 909 N 0 -3221 50 0 0 3221 h
+.425 g 3199 909 N 0 -3221 50 0 0 3221 h
+.435 g 3249 909 N 0 -3221 50 0 0 3221 h
+.445 g 3299 909 N 0 -3221 50 0 0 3221 h
+.455 g 3349 909 N 0 -3221 50 0 0 3221 h
+.465 g 3399 909 N 0 -3221 50 0 0 3221 h
+.475 g 3449 909 N 0 -3221 50 0 0 3221 h
+.485 g 3499 909 N 0 -3221 50 0 0 3221 h
+.495 g 3549 909 N 0 -3221 51 0 0 3221 h
+.505 g 3600 909 N 0 -3221 50 0 0 3221 h
+.515 g 3650 909 N 0 -3221 50 0 0 3221 h
+.525 g 3700 909 N 0 -3221 50 0 0 3221 h
+.535 g 3750 909 N 0 -3221 50 0 0 3221 h
+.545 g 3800 909 N 0 -3221 50 0 0 3221 h
+.555 g 3850 909 N 0 -3221 50 0 0 3221 h
+.565 g 3900 909 N 0 -3221 50 0 0 3221 h
+.575 g 3950 909 N 0 -3221 50 0 0 3221 h
+.585 g 4000 909 N 0 -3221 50 0 0 3221 h
+.595 g 4050 909 N 0 -3221 50 0 0 3221 h
+.605 g 4100 909 N 0 -3221 50 0 0 3221 h
+.615 g 4150 909 N 0 -3221 50 0 0 3221 h
+.625 g 4200 909 N 0 -3221 50 0 0 3221 h
+.635 g 4250 909 N 0 -3221 50 0 0 3221 h
+.645 g 4300 909 N 0 -3221 50 0 0 3221 h
+.655 g 4350 909 N 0 -3221 50 0 0 3221 h
+.665 g 4400 909 N 0 -3221 50 0 0 3221 h
+.675 g 4450 909 N 0 -3221 50 0 0 3221 h
+.685 g 4500 909 N 0 -3221 50 0 0 3221 h
+.695 g 4550 909 N 0 -3221 50 0 0 3221 h
+.705 g 4600 909 N 0 -3221 51 0 0 3221 h
+.715 g 4651 909 N 0 -3221 50 0 0 3221 h
+.725 g 4701 909 N 0 -3221 50 0 0 3221 h
+.735 g 4751 909 N 0 -3221 50 0 0 3221 h
+.745 g 4801 909 N 0 -3221 50 0 0 3221 h
+.755 g 4851 909 N 0 -3221 50 0 0 3221 h
+.765 g 4901 909 N 0 -3221 50 0 0 3221 h
+.775 g 4951 909 N 0 -3221 50 0 0 3221 h
+.785 g 5001 909 N 0 -3221 50 0 0 3221 h
+.795 g 5051 909 N 0 -3221 50 0 0 3221 h
+.805 g 5101 909 N 0 -3221 50 0 0 3221 h
+.815 g 5151 909 N 0 -3221 50 0 0 3221 h
+.825 g 5201 909 N 0 -3221 50 0 0 3221 h
+.835 g 5251 909 N 0 -3221 50 0 0 3221 h
+.845 g 5301 909 N 0 -3221 50 0 0 3221 h
+.855 g 5351 909 N 0 -3221 50 0 0 3221 h
+.865 g 5401 909 N 0 -3221 50 0 0 3221 h
+.875 g 5451 909 N 0 -3221 50 0 0 3221 h
+.885 g 5501 909 N 0 -3221 50 0 0 3221 h
+.895 g 5551 909 N 0 -3221 50 0 0 3221 h
+.905 g 5601 909 N 0 -3221 51 0 0 3221 h
+.915 g 5652 909 N 0 -3221 50 0 0 3221 h
+.925 g 5702 909 N 0 -3221 50 0 0 3221 h
+.935 g 5752 909 N 0 -3221 50 0 0 3221 h
+.945 g 5802 909 N 0 -3221 50 0 0 3221 h
+.955 g 5852 909 N 0 -3221 50 0 0 3221 h
+.965 g 5902 909 N 0 -3221 50 0 0 3221 h
+.975 g 5952 909 N 0 -3221 50 0 0 3221 h
+.985 g 6002 909 N 0 -3221 50 0 0 3221 h
+.995 g 6052 909 N 0 -3221 50 0 0 3221 h
+%pm3d_map_end
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+stroke gsave	%% draw gray scale smooth box
+maxcolors 0 gt {/imax maxcolors def} {/imax 1024 def} ifelse
+6227 909 translate 250 3221 scale 0 setlinewidth
+/ystep 1 imax div def /y0 0 def /ii 0 def
+{ y0 g 0 y0 N 1 0 V 0 ystep V -1 0 f
+/y0 y0 ystep add def /ii ii 1 add def
+ii imax ge {exit} if } loop
+grestore 0 setgray
+1.000 UL
+LTb
+6227 909 N
+250 0 V
+0 3221 V
+-250 0 V
+0 -3221 V
+Z stroke
+1.000 UL
+LTb
+1.000 UL
+LTb
+6477 909 M
+-63 0 V
+stroke
+6561 909 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 909 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 1553 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.2)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 1553 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2197 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.4)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2197 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2841 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.6)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2841 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 3485 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.8)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 3485 M
+63 0 V
+187 645 R
+-63 0 V
+stroke
+6561 4130 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 4130 M
+63 0 V
+1.000 UP
+stroke
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Page: 6 6
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
 /RedA [.1059 .851 .4588 .9059 .4 .902 .651 .4 ] def
 /GreenA [.6196 .3725 .4392 .1608 .651 .6706 .4627 .4 ] def
 /BlueA [.4667 .0078 .702 .5412 .1176 .0078 .1137 .4 ] def
@@ -1300,6 +2149,289 @@ stroke
 grestore
 end
 showpage
+%%Page: 7 7
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1429 .2857 .4286 .5714 .7143 .8571 1 ] def
+/RedA [.5529 1 .7451 .9843 .502 .9922 .702 .9882 ] def
+/GreenA [.8275 1 .7294 .502 .6941 .7059 .8706 .8039 ] def
+/BlueA [.7804 .702 .8549 .4471 .8275 .3843 .4118 .898 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 div def
+/ColorSpace (RGB) def
+Color true and { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+3599 4340 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Set3)]
+] -46.7 MCshow
+1.000 UP
+1.000 UL
+LT0
+%pm3d_map_begin
+.005 g 1097 909 N 0 -3221 50 0 0 3221 h
+.015 g 1147 909 N 0 -3221 50 0 0 3221 h
+.025 g 1197 909 N 0 -3221 50 0 0 3221 h
+.035 g 1247 909 N 0 -3221 50 0 0 3221 h
+.045 g 1297 909 N 0 -3221 50 0 0 3221 h
+.055 g 1347 909 N 0 -3221 50 0 0 3221 h
+.065 g 1397 909 N 0 -3221 50 0 0 3221 h
+.075 g 1447 909 N 0 -3221 50 0 0 3221 h
+.085 g 1497 909 N 0 -3221 50 0 0 3221 h
+.095 g 1547 909 N 0 -3221 51 0 0 3221 h
+.105 g 1598 909 N 0 -3221 50 0 0 3221 h
+.115 g 1648 909 N 0 -3221 50 0 0 3221 h
+.125 g 1698 909 N 0 -3221 50 0 0 3221 h
+.135 g 1748 909 N 0 -3221 50 0 0 3221 h
+.145 g 1798 909 N 0 -3221 50 0 0 3221 h
+.155 g 1848 909 N 0 -3221 50 0 0 3221 h
+.165 g 1898 909 N 0 -3221 50 0 0 3221 h
+.175 g 1948 909 N 0 -3221 50 0 0 3221 h
+.185 g 1998 909 N 0 -3221 50 0 0 3221 h
+.195 g 2048 909 N 0 -3221 50 0 0 3221 h
+.205 g 2098 909 N 0 -3221 50 0 0 3221 h
+.215 g 2148 909 N 0 -3221 50 0 0 3221 h
+.225 g 2198 909 N 0 -3221 50 0 0 3221 h
+.235 g 2248 909 N 0 -3221 50 0 0 3221 h
+.245 g 2298 909 N 0 -3221 50 0 0 3221 h
+.255 g 2348 909 N 0 -3221 50 0 0 3221 h
+.265 g 2398 909 N 0 -3221 50 0 0 3221 h
+.275 g 2448 909 N 0 -3221 50 0 0 3221 h
+.285 g 2498 909 N 0 -3221 50 0 0 3221 h
+.295 g 2548 909 N 0 -3221 51 0 0 3221 h
+.305 g 2599 909 N 0 -3221 50 0 0 3221 h
+.315 g 2649 909 N 0 -3221 50 0 0 3221 h
+.325 g 2699 909 N 0 -3221 50 0 0 3221 h
+.335 g 2749 909 N 0 -3221 50 0 0 3221 h
+.345 g 2799 909 N 0 -3221 50 0 0 3221 h
+.355 g 2849 909 N 0 -3221 50 0 0 3221 h
+.365 g 2899 909 N 0 -3221 50 0 0 3221 h
+.375 g 2949 909 N 0 -3221 50 0 0 3221 h
+.385 g 2999 909 N 0 -3221 50 0 0 3221 h
+.395 g 3049 909 N 0 -3221 50 0 0 3221 h
+.405 g 3099 909 N 0 -3221 50 0 0 3221 h
+.415 g 3149 909 N 0 -3221 50 0 0 3221 h
+.425 g 3199 909 N 0 -3221 50 0 0 3221 h
+.435 g 3249 909 N 0 -3221 50 0 0 3221 h
+.445 g 3299 909 N 0 -3221 50 0 0 3221 h
+.455 g 3349 909 N 0 -3221 50 0 0 3221 h
+.465 g 3399 909 N 0 -3221 50 0 0 3221 h
+.475 g 3449 909 N 0 -3221 50 0 0 3221 h
+.485 g 3499 909 N 0 -3221 50 0 0 3221 h
+.495 g 3549 909 N 0 -3221 51 0 0 3221 h
+.505 g 3600 909 N 0 -3221 50 0 0 3221 h
+.515 g 3650 909 N 0 -3221 50 0 0 3221 h
+.525 g 3700 909 N 0 -3221 50 0 0 3221 h
+.535 g 3750 909 N 0 -3221 50 0 0 3221 h
+.545 g 3800 909 N 0 -3221 50 0 0 3221 h
+.555 g 3850 909 N 0 -3221 50 0 0 3221 h
+.565 g 3900 909 N 0 -3221 50 0 0 3221 h
+.575 g 3950 909 N 0 -3221 50 0 0 3221 h
+.585 g 4000 909 N 0 -3221 50 0 0 3221 h
+.595 g 4050 909 N 0 -3221 50 0 0 3221 h
+.605 g 4100 909 N 0 -3221 50 0 0 3221 h
+.615 g 4150 909 N 0 -3221 50 0 0 3221 h
+.625 g 4200 909 N 0 -3221 50 0 0 3221 h
+.635 g 4250 909 N 0 -3221 50 0 0 3221 h
+.645 g 4300 909 N 0 -3221 50 0 0 3221 h
+.655 g 4350 909 N 0 -3221 50 0 0 3221 h
+.665 g 4400 909 N 0 -3221 50 0 0 3221 h
+.675 g 4450 909 N 0 -3221 50 0 0 3221 h
+.685 g 4500 909 N 0 -3221 50 0 0 3221 h
+.695 g 4550 909 N 0 -3221 50 0 0 3221 h
+.705 g 4600 909 N 0 -3221 51 0 0 3221 h
+.715 g 4651 909 N 0 -3221 50 0 0 3221 h
+.725 g 4701 909 N 0 -3221 50 0 0 3221 h
+.735 g 4751 909 N 0 -3221 50 0 0 3221 h
+.745 g 4801 909 N 0 -3221 50 0 0 3221 h
+.755 g 4851 909 N 0 -3221 50 0 0 3221 h
+.765 g 4901 909 N 0 -3221 50 0 0 3221 h
+.775 g 4951 909 N 0 -3221 50 0 0 3221 h
+.785 g 5001 909 N 0 -3221 50 0 0 3221 h
+.795 g 5051 909 N 0 -3221 50 0 0 3221 h
+.805 g 5101 909 N 0 -3221 50 0 0 3221 h
+.815 g 5151 909 N 0 -3221 50 0 0 3221 h
+.825 g 5201 909 N 0 -3221 50 0 0 3221 h
+.835 g 5251 909 N 0 -3221 50 0 0 3221 h
+.845 g 5301 909 N 0 -3221 50 0 0 3221 h
+.855 g 5351 909 N 0 -3221 50 0 0 3221 h
+.865 g 5401 909 N 0 -3221 50 0 0 3221 h
+.875 g 5451 909 N 0 -3221 50 0 0 3221 h
+.885 g 5501 909 N 0 -3221 50 0 0 3221 h
+.895 g 5551 909 N 0 -3221 50 0 0 3221 h
+.905 g 5601 909 N 0 -3221 51 0 0 3221 h
+.915 g 5652 909 N 0 -3221 50 0 0 3221 h
+.925 g 5702 909 N 0 -3221 50 0 0 3221 h
+.935 g 5752 909 N 0 -3221 50 0 0 3221 h
+.945 g 5802 909 N 0 -3221 50 0 0 3221 h
+.955 g 5852 909 N 0 -3221 50 0 0 3221 h
+.965 g 5902 909 N 0 -3221 50 0 0 3221 h
+.975 g 5952 909 N 0 -3221 50 0 0 3221 h
+.985 g 6002 909 N 0 -3221 50 0 0 3221 h
+.995 g 6052 909 N 0 -3221 50 0 0 3221 h
+%pm3d_map_end
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+1.000 UL
+LTb
+1097 4130 N
+0 -3221 V
+5005 0 V
+0 3221 V
+-5005 0 V
+Z stroke
+stroke gsave	%% draw gray scale smooth box
+maxcolors 0 gt {/imax maxcolors def} {/imax 1024 def} ifelse
+6227 909 translate 250 3221 scale 0 setlinewidth
+/ystep 1 imax div def /y0 0 def /ii 0 def
+{ y0 g 0 y0 N 1 0 V 0 ystep V -1 0 f
+/y0 y0 ystep add def /ii ii 1 add def
+ii imax ge {exit} if } loop
+grestore 0 setgray
+1.000 UL
+LTb
+6227 909 N
+250 0 V
+0 3221 V
+-250 0 V
+0 -3221 V
+Z stroke
+1.000 UL
+LTb
+1.000 UL
+LTb
+6477 909 M
+-63 0 V
+stroke
+6561 909 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 909 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 1553 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.2)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 1553 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2197 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.4)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2197 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 2841 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.6)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 2841 M
+63 0 V
+187 644 R
+-63 0 V
+stroke
+6561 3485 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0.8)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 3485 M
+63 0 V
+187 645 R
+-63 0 V
+stroke
+6561 4130 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1.0)]
+] -46.7 MLshow
+1.000 UL
+LTb
+6227 4130 M
+63 0 V
+1.000 UP
+stroke
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
 %%Trailer
 %%DocumentFonts: Helvetica
-%%Pages: 3
+%%Pages: 7

@@ -1,6 +1,6 @@
 # line styles for ColorBrewer Paired
 # for use with qualitative/categorical data
-# provides 10 colors in 5 pairs
+# provides 8 colors in 4 pairs
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 

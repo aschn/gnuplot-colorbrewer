@@ -26,45 +26,45 @@ GPFUN_f = "f(x)=(x+10)/20"
 
 # plot with Greys
 set title 'Greys'
-load 'greys.plt'
+load 'Greys.plt'
 splot f(x)
 
 # plot with Purples
 set title 'Purples'
-load 'purples.plt'
+load 'Purples.plt'
 splot f(x)
 
 # plot with Blues
 set title 'Blues'
-load 'blues.plt'
+load 'Blues.plt'
 splot f(x)
 
 # plot with Greens
 set title 'Greens'
-load 'greens.plt'
+load 'Greens.plt'
 splot f(x)
 
-# plot with Orange
+# plot with Oranges
 set title 'Oranges'
-load 'oranges.plt'
+load 'Oranges.plt'
 splot f(x)
 
 # plot with Reds
 set title 'Reds'
-load 'reds.plt'
+load 'Reds.plt'
 splot f(x)
 
 # plot with BuGn
 set title 'BuGn'
-load 'bugn.plt'
+load 'BuGn.plt'
 splot f(x)
 
 # plot with YlGn
 set title 'YlGn'
-load 'ylgn.plt'
+load 'YlGn.plt'
 splot f(x)
 
 # plot with YlOrRd
 set title 'YlOrRd'
-load 'ylorrd.plt'
+load 'YlOrRd.plt'
 splot f(x)

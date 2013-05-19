@@ -1,18 +1,25 @@
 gnuplot-colorbrewer
 ===================
 
-An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrewer2.org/) in the handy command-line plotting program [gnuplot](http://www.gnuplot.info/).
+An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrewer2.org/) in the handy command-line plotting program [gnuplot](http://www.gnuplot.info/). 
+
+Each color scheme provides 8 discrete colors, and a continuous color palette. Sample code is available for producing line plots (with <code>plot</code>) and heatmaps (with <code>splot</code>).
 
 
 Qualitative Color Schemes
 -------------------------
 
-Qualitative color schemes are good for comparing data sets without emphasizing any inherent ordering: bar charts of categorical data, plots of data points and fits to the data, etc. These color schemes are in the <code>qualitative</code> directory. Right now this just includes the qualitative color schemes that I use most often (Set1, Paired, and Dark2). Sample code is available for producing line plots (with <code>plot</code>) and images (with <code>splot</code>), although the latter is unlikely to be useful for qualitative color schemes.
+Qualitative color schemes are good for comparing data sets without emphasizing any inherent ordering: attributes of categorically-grouped data, plots of data points and fits to the data, etc. These color schemes are in the <code>qualitative</code> directory. I've included all of the available schemes, both the ones that I use frequently (Set1 and Paired) as well as the others (Accent, Pastel1, Set2, Dark2, Pastel2, Set3). Heatmaps are unlikely to be useful for qualitative color schemes.
 
 Sequential Color Schemes
 -------------------------
 
-Sequential color schemes are good for comparing data with an inherent ordering from low to high: data sets collected at increasing temperatures, maps of population densities, etc. These color schemes are in the <code>sequential</code> directory. I've included all of the single hue schemes (Greys, Purples, Blues, Greens, Oranges, and Reds) and a few of the multihue schemes (BuGn, YlGn, and YlOrRd). Sample code is available for producing line plots (with <code>plot</code>) and images (with <code>splot</code>).
+Sequential color schemes are good for emphasizing one extreme of ordered data: data collected at different time points, maps of population densities, etc. These color schemes are in the <code>sequential</code> directory. I've included all of the single hue schemes (Greys, Purples, Blues, Greens, Oranges, and Reds) and a few of the multihue schemes (BuGn, YlGn, and YlOrRd).
+
+Diverging Color Schemes
+-------------------------
+
+Diverging color schemes are good for emphasizing both extremes of ordered data: attributes of those with positive/neutral/negative opinions on an issue,maps of temperature deviation from a mean, etc. These color schemes are in the <code>divergin</code> directory. I've included all of the available schemes, both the ones centered about white (BrBG, PiYG, PuGn, PuOr, RdGy, RdBu) and the ones centered about yellow ( RdYlGn, RdYlBu, Spectral). Note that Spectral is the most rainbow-like of the ColorBrewer schemes, although the central yellows are deemphasized compared to other rainbow or jet color schemes.
 
 Usage
 -----
@@ -21,8 +28,7 @@ To use any color scheme, just load it before calling <code>plot</code> in your g
 
       load 'path/to/qualitative/set1.plt'
 
-When plotting lines or points, add the property <code>linestyle i</code> (aka <code>ls i</code>) to your <code>plot</code> call to use color number <code>i</code>. A few things to keep in mind:
-* Each color scheme provides 8 discrete colors.
+When plotting lines or points, add the property <code>linestyle i</code> (aka <code>ls i</code>) to your <code>plot</code> call to use color number <code>i</code>. A couple things to keep in mind:
 * All non-color properties (e.g., point style) will match the defaults for the first 8 line types. If you want to modify other properties, simply copy the contents of the color scheme plt file into your plotting script and modify each line style there.
 * For all of the sequential color schemes, color #1 is very difficult to see on a white background; I recommend starting with #2, #3, or even #4.
 
