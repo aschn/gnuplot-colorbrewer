@@ -4,7 +4,7 @@
 # author: Anna Schneider
 
 # set up output
-set output 'diverging_colored_palettes.eps'
+set output 'diverging_colored_palettes.ps'
 set terminal postscript color solid enhanced lw 5 "Helvetica"
 
 # set up view, following http://gnuplot.sourceforge.net/demo/pm3dcolors.4.gnu

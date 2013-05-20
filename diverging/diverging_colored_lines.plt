@@ -4,7 +4,7 @@
 # author: Anna Schneider
 
 # set up plot
-set output 'diverging_colored_lines.eps'
+set output 'diverging_colored_lines.ps'
 set terminal postscript color solid enhanced lw 5 "Helvetica"
 set xrange [0:pi]
 

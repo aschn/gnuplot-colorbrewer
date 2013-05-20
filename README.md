@@ -26,13 +26,13 @@ Usage
 
 To use any color scheme, just load it before calling <code>plot</code> or <code>splot</code> in your gnuplot script or interactive session. For example:
 
-      load 'path/to/qualitative/set1.plt'
+      load 'path/to/qualitative/Set1.plt'
 
 When plotting lines or points, add the property <code>linestyle i</code> (aka <code>ls i</code>) to your <code>plot</code> call to use color number <code>i</code>. All non-color properties (e.g., point style) will match the defaults for the first 8 line types. If you want to modify other properties, simply copy the contents of the color scheme plt file into your plotting script and modify each line style there.
 
 When plotting using a continuous color palette, simply use your usual <code>splot</code> call.
 
-Full example code and output is available in each directory for both line and palette modes. For example, to produce the output at <code>qualitative/qualitative_colored_lines.eps</code>, run the command
+Full example code and output is available in each directory for both line and palette modes. For example, to produce the output at <code>qualitative/qualitative_colored_lines.ps</code>, run the command
 
      gnuplot path/to/qualitative/qualitative_colored_lines.plt
 
