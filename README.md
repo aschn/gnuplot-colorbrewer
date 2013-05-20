@@ -35,3 +35,13 @@ When plotting using a continuous color palette, simply use your usual <code>splo
 Full example code and output is available in each directory for both line and palette modes. For example, to produce the output at <code>qualitative/qualitative_colored_lines.eps</code>, run the command
 
      gnuplot path/to/qualitative/qualitative_colored_lines.plt
+
+Author
+------
+
+gnuplot-colorbrewer is written and maintained by Anna Schneider. Contact me at [annarschneider@gmail.com](mailto:annarschneider+github@gmail.com).
+
+License
+-------
+
+gnuplot-colorbrewer is released under the [MIT License](http://opensource.org/licenses/MIT).

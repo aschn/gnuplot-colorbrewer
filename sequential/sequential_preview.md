@@ -1,0 +1,1 @@
+![alt text](https://github.com/aschn/gnuplot-colorbrewer/blob/master/sequential/sequential_colored_lines.eps)
