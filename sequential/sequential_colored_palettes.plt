@@ -59,9 +59,54 @@ set title 'BuGn'
 load 'BuGn.plt'
 splot f(x)
 
+# plot with BuPu
+set title 'BuPu'
+load 'BuPu.plt'
+splot f(x)
+
+# plot with GnBu
+set title 'GnBu'
+load 'GnBu.plt'
+splot f(x)
+
+# plot with OrRd
+set title 'OrRd'
+load 'OrRd.plt'
+splot f(x)
+
+# plot with PuBu
+set title 'PuBu'
+load 'PuBu.plt'
+splot f(x)
+
+# plot with PuBuGn
+set title 'PuBuGn'
+load 'PuBuGn.plt'
+splot f(x)
+
+# plot with PuRd
+set title 'PuRd'
+load 'PuRd.plt'
+splot f(x)
+
+# plot with RdPu
+set title 'RdPu'
+load 'RdPu.plt'
+splot f(x)
+
 # plot with YlGn
 set title 'YlGn'
 load 'YlGn.plt'
+splot f(x)
+
+# plot with YlGnBu
+set title 'YlGnBu'
+load 'YlGnBu.plt'
+splot f(x)
+
+# plot with YlOrBr
+set title 'YlOrBr'
+load 'YlOrBr.plt'
 splot f(x)
 
 # plot with YlOrRd
