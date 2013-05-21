@@ -15,6 +15,7 @@ set style line 7 lc rgb '#E5C494' # tan
 set style line 8 lc rgb '#B3B3B3' # grey
 
 # palette
+set palette maxcolors 8
 set palette defined ( 0 '#66C2A5',\
     	    	      1 '#FC8D62',\
 		      2 '#8DA0CB',\

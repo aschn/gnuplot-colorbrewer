@@ -15,6 +15,7 @@ set style line 7 lc rgb '#B3DE69' # lime green
 set style line 8 lc rgb '#FCCDE5' # mauve
 
 # palette
+set palette maxcolors 8
 set palette defined ( 0 '#8DD3C7',\
     	    	      1 '#FFFFB3',\
 		      2 '#BEBADA',\
