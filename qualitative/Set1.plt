@@ -15,6 +15,7 @@ set style line 7 lc rgb '#A65628' # brown
 set style line 8 lc rgb '#F781BF' # pink
 
 # palette
+set palette maxcolors 8
 set palette defined ( 0 '#E41A1C',\
     	    	      1 '#377EB8',\
 		      2 '#4DAF4A',\

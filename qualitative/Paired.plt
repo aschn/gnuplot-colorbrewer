@@ -15,6 +15,7 @@ set style line 7 lc rgb '#FDBF6F' # light orange
 set style line 8 lc rgb '#FF7F00' # dark orange
 
 # palette
+set palette maxcolors 8
 set palette defined ( 0 '#A6CEE3',\
     	    	      1 '#1F78B4',\
 		      2 '#B2DF8A',\
