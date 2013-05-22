@@ -34,9 +34,9 @@ set title 'PiYG'
 load 'PiYG.plt'
 splot f(x)
 
-# plot with PuGn
-set title 'PuGn'
-load 'PuGn.plt'
+# plot with PRGn
+set title 'PRGn'
+load 'PRGn.plt'
 splot f(x)
 
 # plot with PuOr
