@@ -35,9 +35,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with PuGn
-set title 'PuGn'
-load 'PuGn.plt'
+# plot with PRGn
+set title 'PRGn'
+load 'PRGn.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\

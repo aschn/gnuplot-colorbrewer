@@ -73,7 +73,7 @@ f(x,8) ls 8 title 'line 8'
 
 # plot with Reds
 set title 'Reds'
-load 'reds.plt'
+load 'Reds.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
