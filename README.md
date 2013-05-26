@@ -43,7 +43,7 @@ When plotting using a continuous color palette, simply use your usual <code>splo
      set palette negative
      splot cos(x) w pm3d
 
-Full example code and output is available for both line and palette modes. For example, to produce the output at <code>examples/qualitative_colored_lines.ps</code>, run the command
+Full example code and output is available for both line and palette modes. For example, to produce the output at <code>examples/qualitative_colored_lines.ps</code>, run this in a shell:
 
      cd path/to/examples
      gnuplot qualitative_colored_lines.plt
