@@ -1,19 +1,19 @@
 # example code for gnuplot-colorbrewer
-# for use with diverging data in plot mode
+# for use with qualitative/categorical data in plot mode
 # compatible with gnuplot >=4.2
 # author: Anna Schneider
 
 # set up plot
-set output 'diverging_colored_lines.ps'
+set output 'qualitative_colored_lines.ps'
 set terminal postscript color solid enhanced lw 5 "Helvetica"
 set xrange [0:pi]
 
 # set up function to plot
 f(x,i) = cos(x - 1.0 + i/10.0)
 
-# plot with BrBG
-set title 'BrBG'
-load 'BrBG.plt'
+# plot with Set1
+set title 'Set1'
+load '../qualitative/Set1.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -23,9 +23,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with PiYG
-set title 'PiYG'
-load 'PiYG.plt'
+# plot with Paired
+set title 'Paired'
+load '../qualitative/Paired.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -35,9 +35,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with PRGn
-set title 'PRGn'
-load 'PRGn.plt'
+# plot with Accent
+set title 'Accent'
+load '../qualitative/Accent.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -47,9 +47,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with PuOr
-set title 'PuOr'
-load 'PuOr.plt'
+# plot with Pastel1
+set title 'Pastel1'
+load '../qualitative/Pastel1.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -59,9 +59,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with RdBu
-set title 'RdBu'
-load 'RdBu.plt'
+# plot with Set2
+set title 'Set2'
+load '../qualitative/Set2.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -71,9 +71,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with RdGy
-set title 'RdGy'
-load 'RdGy.plt'
+# plot with Dark2
+set title 'Dark2'
+load '../qualitative/Dark2.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -83,9 +83,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with RdYlBu
-set title 'RdYlBu'
-load 'RdYlBu.plt'
+# plot with Pastel2
+set title 'Pastel2'
+load '../qualitative/Pastel2.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\
@@ -95,21 +95,9 @@ f(x,6) ls 6 title 'line 6',\
 f(x,7) ls 7 title 'line 7',\
 f(x,8) ls 8 title 'line 8'
 
-# plot with RdYlGn
-set title 'RdYlGn'
-load 'RdYlGn.plt'
-plot f(x,1) ls 1 title 'line 1',\
-f(x,2) ls 2 title 'line 2',\
-f(x,3) ls 3 title 'line 3',\
-f(x,4) ls 4 title 'line 4',\
-f(x,5) ls 5 title 'line 5',\
-f(x,6) ls 6 title 'line 6',\
-f(x,7) ls 7 title 'line 7',\
-f(x,8) ls 8 title 'line 8'
-
-# plot with Spectral
-set title 'Spectral'
-load 'Spectral.plt'
+# plot with Set3
+set title 'Set3'
+load '../qualitative/Set3.plt'
 plot f(x,1) ls 1 title 'line 1',\
 f(x,2) ls 2 title 'line 2',\
 f(x,3) ls 3 title 'line 3',\

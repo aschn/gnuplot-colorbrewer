@@ -3,7 +3,7 @@ gnuplot-colorbrewer
 
 An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrewer2.org/) in the handy command-line plotting program [gnuplot](http://www.gnuplot.info/). 
 
-All ColorBrewer color schemes that includes at least 8 colors are included. Each color scheme provides 8 discrete colors and a continuous color palette. Sample code is available for producing line plots (with <code>plot</code>) and heatmaps (with <code>splot</code>).
+All ColorBrewer color schemes that include at least 8 colors are included. Each color scheme provides 8 discrete colors and a continuous color palette. See the <code>examples</code> directory for sample code and output.
 
 
 Qualitative Color Schemes
@@ -24,22 +24,34 @@ Diverging color schemes are good for emphasizing both extremes of ordered data: 
 Usage
 -----
 
+First, choose your desired color scheme by perusing [ColorBrewer](http://colorbrewer2.org/) and the PostScript files included in the <code>examples</code> directory. I also like the concise [colormap reference](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) in the Matplotlib Cookbook.
+
 To use any color scheme, just load it before calling <code>plot</code> or <code>splot</code> in your gnuplot script or interactive session. For example:
 
-      load 'path/to/qualitative/Set1.plt'
+      load 'path/to/sequential/Greens.plt'
 
-When plotting lines or points, add the property <code>linestyle i</code> (aka <code>ls i</code>) to your <code>plot</code> call to use color number <code>i</code>. All non-color properties (e.g., point style) will match the defaults for the first 8 line types. If you want to modify other properties, simply copy the contents of the color scheme plt file into your plotting script and modify each line style there.
+When plotting lines or points, add the property <code>linestyle i</code> (aka <code>ls i</code>) to your <code>plot</code> call to use color number <code>i</code>. For example:
 
-When plotting using a continuous color palette, simply use your usual <code>splot</code> call.
+     load 'path/to/qualitative/Paired.plt'
+     plot cos(x) ls 1, sin(x) ls 2
 
-Full example code and output is available in each directory for both line and palette modes. For example, to produce the output at <code>qualitative/qualitative_colored_lines.ps</code>, run the command
+All non-color properties (e.g., point style) will match the defaults for the first 8 line types. If you want to modify other properties, simply copy the contents of the color scheme plt file into your plotting script and modify each line style there.
 
-     gnuplot path/to/qualitative/qualitative_colored_lines.plt
+When plotting using a continuous color palette, simply use your usual <code>splot</code> call. To use a reversed color palette, include the line <code>set palette negative</code> before plotting. For example, this snippet plots a surface with low values colored blue and high values colored red: 
+
+     load 'path/to/diverging/RdBu.plt'
+     set palette negative
+     splot cos(x) w pm3d
+
+Full example code and output is available for both line and palette modes. For example, to produce the output at <code>examples/qualitative_colored_lines.ps</code>, run the command
+
+     cd path/to/examples
+     gnuplot qualitative_colored_lines.plt
 
 Credits
 ------
 
-gnuplot-colorbrewer is written and maintained by Anna Schneider [<annarschneider@gmail.com>](mailto:annarschneider+github@gmail.com). ColorBrewer is a project of Cynthia Brewer, Mark Harrower, and The Pennsylvania State University.
+gnuplot-colorbrewer is written and maintained by Anna Schneider <[annarschneider@gmail.com](mailto:annarschneider+github@gmail.com)>. ColorBrewer is a project of Cynthia Brewer, Mark Harrower, and The Pennsylvania State University.
 
 License
 -------

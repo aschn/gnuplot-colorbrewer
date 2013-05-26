@@ -26,35 +26,35 @@ GPFUN_f = "f(x)=(x+10)/20"
 
 # plot with Set1
 set title 'Set1'
-load 'Set1.plt'
+load '../qualitative/Set1.plt'
 splot f(x)
 
 # plot with Paired
 set title 'Paired'
-load 'Paired.plt'
+load '../qualitative/Paired.plt'
 splot f(x)
 
 # plot with Accent
 set title 'Accent'
-load 'Accent.plt'
+load '../qualitative/Accent.plt'
 splot f(x)
 
 # plot with Pastel1
 set title 'Pastel1'
-load 'Pastel1.plt'
+load '../qualitative/Pastel1.plt'
 splot f(x)
 
 # plot with Set2
 set title 'Set2'
-load 'Set2.plt'
+load '../qualitative/Set2.plt'
 splot f(x)
 
 # plot with Dark2
 set title 'Dark2'
-load 'Dark2.plt'
+load '../qualitative/Dark2.plt'
 splot f(x)
 
 # plot with Set3
 set title 'Set3'
-load 'Set3.plt'
+load '../qualitative/Set3.plt'
 splot f(x)

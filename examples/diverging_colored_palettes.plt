@@ -26,45 +26,45 @@ GPFUN_f = "f(x)=(x+10)/20"
 
 # plot with BrBG
 set title 'BrBG'
-load 'BrBG.plt'
+load '../diverging/BrBG.plt'
 splot f(x)
 
 # plot with PiYG
 set title 'PiYG'
-load 'PiYG.plt'
+load '../diverging/PiYG.plt'
 splot f(x)
 
 # plot with PRGn
 set title 'PRGn'
-load 'PRGn.plt'
+load '../diverging/PRGn.plt'
 splot f(x)
 
 # plot with PuOr
 set title 'PuOr'
-load 'PuOr.plt'
+load '../diverging/PuOr.plt'
 splot f(x)
 
 # plot with RdBu
 set title 'RdBu'
-load 'RdBu.plt'
+load '../diverging/RdBu.plt'
 splot f(x)
 
 # plot with RdGy
 set title 'RdGy'
-load 'RdGy.plt'
+load '../diverging/RdGy.plt'
 splot f(x)
 
 # plot with RdYlBu
 set title 'RdYlBu'
-load 'RdYlBu.plt'
+load '../diverging/RdYlBu.plt'
 splot f(x)
 
 # plot with RdYlGn
 set title 'RdYlGn'
-load 'RdYlGn.plt'
+load '../diverging/RdYlGn.plt'
 splot f(x)
 
 # plot with Spectral
 set title 'Spectral'
-load 'Spectral.plt'
+load '../diverging/Spectral.plt'
 splot f(x)

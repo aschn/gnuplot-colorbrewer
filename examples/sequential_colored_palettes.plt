@@ -26,90 +26,90 @@ GPFUN_f = "f(x)=(x+10)/20"
 
 # plot with Greys
 set title 'Greys'
-load 'Greys.plt'
+load '../sequential/Greys.plt'
 splot f(x)
 
 # plot with Purples
 set title 'Purples'
-load 'Purples.plt'
+load '../sequential/Purples.plt'
 splot f(x)
 
 # plot with Blues
 set title 'Blues'
-load 'Blues.plt'
+load '../sequential/Blues.plt'
 splot f(x)
 
 # plot with Greens
 set title 'Greens'
-load 'Greens.plt'
+load '../sequential/Greens.plt'
 splot f(x)
 
 # plot with Oranges
 set title 'Oranges'
-load 'Oranges.plt'
+load '../sequential/Oranges.plt'
 splot f(x)
 
 # plot with Reds
 set title 'Reds'
-load 'Reds.plt'
+load '../sequential/Reds.plt'
 splot f(x)
 
 # plot with BuGn
 set title 'BuGn'
-load 'BuGn.plt'
+load '../sequential/BuGn.plt'
 splot f(x)
 
 # plot with BuPu
 set title 'BuPu'
-load 'BuPu.plt'
+load '../sequential/BuPu.plt'
 splot f(x)
 
 # plot with GnBu
 set title 'GnBu'
-load 'GnBu.plt'
+load '../sequential/GnBu.plt'
 splot f(x)
 
 # plot with OrRd
 set title 'OrRd'
-load 'OrRd.plt'
+load '../sequential/OrRd.plt'
 splot f(x)
 
 # plot with PuBu
 set title 'PuBu'
-load 'PuBu.plt'
+load '../sequential/PuBu.plt'
 splot f(x)
 
 # plot with PuBuGn
 set title 'PuBuGn'
-load 'PuBuGn.plt'
+load '../sequential/PuBuGn.plt'
 splot f(x)
 
 # plot with PuRd
 set title 'PuRd'
-load 'PuRd.plt'
+load '../sequential/PuRd.plt'
 splot f(x)
 
 # plot with RdPu
 set title 'RdPu'
-load 'RdPu.plt'
+load '../sequential/RdPu.plt'
 splot f(x)
 
 # plot with YlGn
 set title 'YlGn'
-load 'YlGn.plt'
+load '../sequential/YlGn.plt'
 splot f(x)
 
 # plot with YlGnBu
 set title 'YlGnBu'
-load 'YlGnBu.plt'
+load '../sequential/YlGnBu.plt'
 splot f(x)
 
 # plot with YlOrBr
 set title 'YlOrBr'
-load 'YlOrBr.plt'
+load '../sequential/YlOrBr.plt'
 splot f(x)
 
 # plot with YlOrRd
 set title 'YlOrRd'
-load 'YlOrRd.plt'
+load '../sequential/YlOrRd.plt'
 splot f(x)
