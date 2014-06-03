@@ -1,5 +1,6 @@
 gnuplot-colorbrewer
 ===================
+![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.10282.png)
 
 An easy way to use the beautiful color schemes at [ColorBrewer](http://colorbrewer2.org/) in the handy command-line plotting program [gnuplot](http://www.gnuplot.info/). 
 
