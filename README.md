@@ -12,15 +12,21 @@ Qualitative Color Schemes
 
 Qualitative color schemes are good for comparing data sets without emphasizing any inherent ordering: attributes of categorically-grouped data, plots of data points and fits to the data, etc. These color schemes are in the <code>qualitative</code> directory. Specifically, there are 2 schemes that I use frequently (Set1, Paired) and 6 others (Accent, Pastel1, Set2, Dark2, Pastel2, Set3). Note that heatmaps are unlikely to be useful for qualitative color schemes.
 
+![Image](examples/qualitative.png)
+
 Sequential Color Schemes
 -------------------------
 
 Sequential color schemes are good for emphasizing one extreme of ordered data: data collected at different time points, maps of population densities, etc. These color schemes are in the <code>sequential</code> directory. Specifically, there are 6 single hue schemes (Greys, Purples, Blues, Greens, Oranges, Reds) and 12 multihue schemes (BuGn, BuPu, GnBu, OrRd, PuBu, BuGn, PuRd, RdPu, YlGn, YlGnBu, YlOrBr, YlOrRd). Note that color #1 is very difficult to see on a white background.
 
+![Image](examples/sequential.png)
+
 Diverging Color Schemes
 -------------------------
 
 Diverging color schemes are good for emphasizing both extremes of ordered data: attributes of those with positive/neutral/negative opinions on an issue, maps of temperature deviation from a mean, etc. These color schemes are in the <code>diverging</code> directory. Specifically, there are 6 schemes centered about white (BrBG, PiYG, PuGn, PuOr, RdGy, RdBu) and 3 centered about yellow (RdYlGn, RdYlBu, Spectral). Note that Spectral is the most rainbow-like of the ColorBrewer schemes, although the central yellows are deemphasized compared to other rainbow or jet color schemes.
+
+![Image](examples/diverging.png)
 
 Usage
 -----
