@@ -5,14 +5,14 @@
 # author: Anna Schneider
 
 # line styles
-set style line 1 lt 1 lc rgb '#F7FCFD' # very light blue-purple
-set style line 2 lt 1 lc rgb '#E0ECF4' # 
-set style line 3 lt 1 lc rgb '#BFD3E6' # 
-set style line 4 lt 1 lc rgb '#9EBCDA' # light blue-purple
-set style line 5 lt 1 lc rgb '#8C96C6' # 
-set style line 6 lt 1 lc rgb '#8C6BB1' # medium blue-purple
-set style line 7 lt 1 lc rgb '#88419D' #
-set style line 8 lt 1 lc rgb '#6E016B' # dark blue-purple
+set style line 1 lc rgb '#F7FCFD' # very light blue-purple
+set style line 2 lc rgb '#E0ECF4' # 
+set style line 3 lc rgb '#BFD3E6' # 
+set style line 4 lc rgb '#9EBCDA' # light blue-purple
+set style line 5 lc rgb '#8C96C6' # 
+set style line 6 lc rgb '#8C6BB1' # medium blue-purple
+set style line 7 lc rgb '#88419D' #
+set style line 8 lc rgb '#6E016B' # dark blue-purple
 
 # palette
 set palette defined ( 0 '#F7FCFD',\

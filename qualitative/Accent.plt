@@ -5,14 +5,14 @@
 # author: Anna Schneider
 
 # line styles
-set style line 1 lt 1 lc rgb '#7FC97F' # pale green
-set style line 2 lt 1 lc rgb '#BEAED4' # pale purple
-set style line 3 lt 1 lc rgb '#FDC086' # pale orange
-set style line 4 lt 1 lc rgb '#FFFF99' # pale yellow
-set style line 5 lt 1 lc rgb '#386CB0' # blue
-set style line 6 lt 1 lc rgb '#F0027F' # magenta
-set style line 7 lt 1 lc rgb '#BF5B17' # brown
-set style line 8 lt 1 lc rgb '#666666' # grey
+set style line 1 lc rgb '#7FC97F' # pale green
+set style line 2 lc rgb '#BEAED4' # pale purple
+set style line 3 lc rgb '#FDC086' # pale orange
+set style line 4 lc rgb '#FFFF99' # pale yellow
+set style line 5 lc rgb '#386CB0' # blue
+set style line 6 lc rgb '#F0027F' # magenta
+set style line 7 lc rgb '#BF5B17' # brown
+set style line 8 lc rgb '#666666' # grey
 
 # palette
 set palette maxcolors 8
